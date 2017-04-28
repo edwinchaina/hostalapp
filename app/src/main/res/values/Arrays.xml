@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Documentos">
+        <item>DNI</item>
+        <item>Pasaporte</item>
+        <item>Carnet Extranjeria</item>
+    </string-array>
+
+
+        <string-array name="Mapa_Distritos">
+            <item>Chorrillos</item>
+            <item>Barranco</item>
+        </string-array>
+    </resources>

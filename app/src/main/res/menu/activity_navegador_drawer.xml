@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_historia"
+            android:title="Historia"
+            android:icon="@drawable/ic_historia"/>
+
+        <item
+            android:id="@+id/nav_perfil"
+            android:title="Perfil"
+            android:icon="@drawable/ic_usuario" />
+        <item
+            android:id="@+id/nav_reservar"
+            android:icon="@drawable/ic_reservar"
+            android:title="Reservar" />
+        <item
+            android:id="@+id/nav_ubicacion"
+            android:icon="@drawable/ic_ubicacion"
+            android:title="Ubicacion" />
+
+        <item
+            android:id="@+id/nav_servicios"
+            android:icon="@drawable/ic_servicios"
+            android:title="Servicios" />
+     <item
+            android:id="@+id/nav_salir"
+         android:icon="@drawable/ic_exit"
+             android:title="Salir" />
+    </group>
+
+    <!--   <item android:title="Communicate">
+     <menu>
+         <item
+             android:id="@+id/nav_share"
+             android:icon="@drawable/ic_menu_share"
+             android:title="Share" />
+         <item
+             android:id="@+id/nav_send"
+             android:icon="@drawable/ic_menu_send"
+             android:title="Send" />
+     </menu>
+ </item> -->
+
+</menu>

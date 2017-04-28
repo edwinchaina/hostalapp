@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.edwin.sistema_hotel.Crear_Cuenta"
+    android:weightSum="1">
+
+       <TextView android:text="CREAR CUENTA"
+           android:textSize="@dimen/abc_dropdownitem_icon_width"
+           android:textColor="@color/accent_material_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="0.57">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <EditText
+            android:id="@+id/text_Nombres"
+            android:layout_width="match_parent"
+               android:hint="Nombres"
+               android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+             />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/text_Apellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Apellidos"
+            android:textSize="20dp" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <Spinner
+                android:id="@+id/Sp_Tipo_Documento"
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/Documentos"
+                android:text="@string/Tipo_Documentos">
+
+            </Spinner>
+
+            <EditText
+                android:id="@+id/text_Documento"
+                android:layout_width="122dp"
+                android:maxLength="8"
+                android:layout_height="wrap_content"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/campo_correo"
+                android:layout_width="match_parent"
+                android:hint="Correo electronico"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                 />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.26"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <Button
+            android:id="@+id/bt_Guardar"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:text="@string/text_Guardar" />
+
+        <Button
+            android:id="@+id/bt_Cancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:text="@string/text_Cancelar" />
+    </LinearLayout>
+</LinearLayout>

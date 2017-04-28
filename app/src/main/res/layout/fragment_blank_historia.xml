@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.example.edwin.sistema_hotel.BlankHistoria"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/tvTextSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/abc_dropdownitem_icon_width"
+        android:textColor="@color/accent_material_light"
+        android:text="Conócenos"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="166dp">
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="348dp"
+        android:orientation="vertical"
+        android:textSize="15sp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/customFontTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="167dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="0.94"
+            android:lineSpacingExtra="4dp"
+            android:text="Está localizado en la eterna primavera del mítico Valle de La Orotava y las suaves arenas volcánicas de las playas se unen, en el Puerto de la Cruz, al Norte de la isla de Tenerife al lado del entorno natural del Parque Taoro."
+            android:textColor="@color/color_white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    </ScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.1" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/indicators"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        app:tabBackground="@drawable/page_indicator"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"/>
+
+
+
+    </LinearLayout>
